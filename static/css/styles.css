@@ -1,0 +1,96 @@
+body{
+    background-color: coral;
+}
+.container {
+    width: 91%;
+    max-width: 3000px;
+    height: 80%;
+    max-height: 900px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 40px auto;
+}
+
+.container2{
+    width: 91%;
+    max-width: 3000px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 0 auto;
+}
+.detail{
+    text-align: center;
+    background-color: coral;
+}
+
+.number{
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+    font-size: larger;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-links li a{
+    font-size: x-large;
+    text-decoration: None;
+    color: black;
+    font-weight: bold;
+}
+
+.course_t ,th, td{
+    border: 1px solid;
+}
+
+th, td{
+    padding: 20px;
+}
+
+.course_t{
+    width: 100%;
+}
+
+.row:hover{
+    background-color: coral;
+}
+.home img{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+
+}
+.button {
+    background-color: coral; 
+    color: white;
+    padding: 15px 32px;
+    font-size: 15px;
+  }
+  .button:hover{
+    background-color: rgb(248, 90, 33);
+    color:white;
+  }
+  .welcome{
+    margin: 0 auto;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+  }
