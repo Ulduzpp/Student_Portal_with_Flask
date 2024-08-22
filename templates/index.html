@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="home">
+                <a href="{{url_for('Main')}}"><img src="{{url_for('static',filename='img/home.png')}}" ></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{url_for('Main')}}">Home</a></li>
+                <li><a href="{{url_for('Profile')}}">Profile</a></li>
+                <li><a href="{{url_for('Course')}}">Courses</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    {%block content%}
+        <div class="container2">
+            <h1 class="welcome">Welcome To The Student's Portal</h1>
+        </div>
+    {%endblock%}   
+</body>
+</html>

@@ -1,0 +1,32 @@
+{%extends 'index.html'%}
+
+
+{%block content%}
+
+<div class="container2">
+    
+    <table class="course_t">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Teacher</th>
+            <th>Description</th>
+        </tr>
+        {%for course in courses%}    
+        <tr class="row">
+            <form action="/auth" method="post">
+                <td><input class="button" type="submit" name="course_num" value="{{course['id']}}"></td>
+            </form>
+            <td>{{course['name']}}</td>
+            <td>{{course['teacher']}}</td>
+            <td>{{course['description']}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    
+
+</div>
+
+
+
+{%endblock%}

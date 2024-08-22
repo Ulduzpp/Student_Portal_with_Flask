@@ -1,0 +1,14 @@
+{%extends 'index.html'%}
+
+{%block content%}
+<div class="container2">
+    <hr>
+    {%for item in students:%}
+    <p class="number">{{item['num']}}</p>
+    <p>Name: {{item['name']}}</p>
+    <p>Email: {{item['email']}}</p>
+    <p>Major: {{item['major']}}</p>
+    <hr>
+    {%endfor%}
+</div>
+{%endblock%}
